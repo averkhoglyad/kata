@@ -5,12 +5,12 @@ import java.util.ArrayDeque;
 /**
  * <h3><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/">Evaluate Reverse Polish Notation</a></h3>
  * <p>
- * You are given an array of strings tokens that represents an arithmetic expression
- * in a <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">Reverse Polish Notation</a>.
- * Evaluate the expression. Return an integer that represents the value of the expression.
+ *     You are given an array of strings tokens that represents an arithmetic expression
+ *     in a <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">Reverse Polish Notation</a>.
+ *     Evaluate the expression. Return an integer that represents the value of the expression.
  * </p>
  * <p>
- * <strong>Note that:</strong>
+ *     <strong>Note that:</strong>
  *     <ul>
  *         <li>The valid operators are <code>'+'</code>, <code>'-'</code>, <code>'*'</code> and <code>'/'</code>.</li>
  *         <li>Each operand may be an integer or another expression.</li>
@@ -23,8 +23,13 @@ import java.util.ArrayDeque;
  * <p>
  *     <h6>Constraints:</h6>
  *     <ul>
- *         <li><code>1 <= tokens.length <= 10^4</code></li>
- *         <li><code>tokens[i]</code> is either an operator: <code>'+'</code>, <code>'-'</code>, <code>'*'</code> or <code>'/'</code> or an integer in the range <code>[-200, 200]</code></li>
+ *         <li>
+ *             <code>1 <= tokens.length <= 10^4</code>
+ *         </li>
+ *         <li>
+ *             <code>tokens[i]</code> is either an operator: <code>'+'</code>, <code>'-'</code>, <code>'*'</code> or
+ *             <code>'/'</code> or an integer in the range <code>[-200, 200]</code>
+ *         </li>
  *     </ul>
  * </p>
  */
