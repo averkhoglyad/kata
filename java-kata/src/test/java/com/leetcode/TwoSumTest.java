@@ -1,9 +1,9 @@
 package com.leetcode;
 
 import org.junit.jupiter.api.Test;
+import test.ArrayUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static test.ArrayUtil.arrayOf;
 
 class TwoSumTest {
 
@@ -14,7 +14,7 @@ class TwoSumTest {
         // Input: nums = [2,7,11,15], target = 9
         // Output: [0,1]
         // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-        var res = it.twoSum(arrayOf(2, 7, 11, 15), 9);
+        var res = it.twoSum(ArrayUtil.intArrayOf(2, 7, 11, 15), 9);
         assertThat(res)
                 .containsExactlyInAnyOrder(0, 1);
 
@@ -24,7 +24,7 @@ class TwoSumTest {
     void test1() {
         // Input: nums = [3,2,4], target = 6
         // Output: [1,2]
-        var res = it.twoSum(arrayOf(3,2,4), 6);
+        var res = it.twoSum(ArrayUtil.intArrayOf(3,2,4), 6);
         assertThat(res)
                 .containsExactlyInAnyOrder(1, 2);
 
@@ -34,7 +34,7 @@ class TwoSumTest {
     void test2() {
         // Input: nums = [3,3], target = 6
         // Output: [0,1]
-        var res = it.twoSum(arrayOf(3, 3), 6);
+        var res = it.twoSum(ArrayUtil.intArrayOf(3, 3), 6);
         assertThat(res)
                 .containsExactlyInAnyOrder(0, 1);
     }

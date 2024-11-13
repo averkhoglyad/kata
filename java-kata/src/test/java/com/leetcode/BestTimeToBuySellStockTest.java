@@ -1,9 +1,9 @@
 package com.leetcode;
 
 import org.junit.jupiter.api.Test;
+import test.ArrayUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static test.ArrayUtil.arrayOf;
 
 class BestTimeToBuySellStockTest {
 
@@ -16,7 +16,7 @@ class BestTimeToBuySellStockTest {
 //        Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
 //        Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 
-        var prices = arrayOf(7, 1, 5, 3, 6, 4);
+        var prices = ArrayUtil.intArrayOf(7, 1, 5, 3, 6, 4);
         assertThat(it.maxProfit(prices))
                 .isEqualTo(5);
     }
@@ -27,7 +27,7 @@ class BestTimeToBuySellStockTest {
 //        Output: 0
 //        Explanation: In this case, no transactions are done and the max profit = 0.
 
-        var prices = arrayOf(7,6,4,3,1);
+        var prices = ArrayUtil.intArrayOf(7,6,4,3,1);
         assertThat(it.maxProfit(prices))
                 .isZero();
     }

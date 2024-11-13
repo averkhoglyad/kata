@@ -4,23 +4,24 @@ public abstract class ArrayUtil {
     private ArrayUtil() {
     }
 
-    public static int[] arrayOf(int... values) {
+    public static int[] intArrayOf(int... values) {
         return values;
     }
 
-    public static long[] arrayOf(long... values) {
+    public static long[] longArrayOf(long... values) {
         return values;
     }
 
-    public static float[] arrayOf(float... values) {
+    public static float[] floatArrayOf(float... values) {
         return values;
     }
 
-    public static double[] arrayOf(double... values) {
+    public static double[] doubleArrayOf(double... values) {
         return values;
     }
 
-    public static String[] arrayOf(String... values) {
+    @SafeVarargs
+    public static <T> T[] arrayOf(T... values) {
         return values;
     }
 }
