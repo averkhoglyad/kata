@@ -23,8 +23,9 @@ import java.util.Objects;
 public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         var result = new ArrayList<List<Integer>>();
+
         Arrays.sort(nums);
-        List<Integer> lastTriplet = null;
+
         for (int i = 0, numsLength = nums.length - 2; i < numsLength; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
@@ -34,16 +35,12 @@ public class ThreeSum {
             do {
                 var sum = nums[i] + nums[low] + nums[high];
                 if (sum == 0) {
-                    var current = List.of(nums[i], nums[low], nums[high]);
-                    if (!Objects.equals(current, lastTriplet)) {
-                        lastTriplet = current;
-                        result.add(lastTriplet);
-                    }
+                    result.add(List.of(nums[i], nums[low], nums[high]));
                 }
                 if (sum > 0) {
-                    high--;
+                    while(low < --high && nums[high] == nums[high + 1]);
                 } else  {
-                    low++;
+                    while(++low < high && nums[low] == nums[low - 1]);
                 }
             } while (high > low);
         }
