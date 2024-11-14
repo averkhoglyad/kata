@@ -15,7 +15,7 @@ import java.util.Objects
  *
  * ```kotlin
  * class Node(var `val`: Int) {
- *     var neighbors: ArrayList<Node> = ArrayList<Node>()
+ *     var neighbors: ArrayList<Node?> = ArrayList<Node?>()
  * }
  * ```
  *
